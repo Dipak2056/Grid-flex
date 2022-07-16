@@ -86,3 +86,7 @@ giving value auto-fit helps the children to stretch-out to satisfy other grid ru
 
 to give rules to newly created rows created as a result to satisfy the grid-column rules, we want to use the css property as grid-auto-row or grid-auto-column and define its height or width. so that it always preserve this property.
 and you can actually get rid of the previously written rule for the grid-template-rows as all the rows are going to get created implicitly
+
+# grid-auto-flow:
+
+this is the property that takes rows,columns and dense as the value. This rules go ahead and find the children in that grid and tries to fit it in the available space.
