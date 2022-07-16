@@ -2,13 +2,13 @@
 
 1. Give display grid to the parent div
 
-## 2. grid-template-columns ===>
+### 2. grid-template-columns ===>
 
     a. This property defines and set the width of the div.
     b. we can use the width in px, em, rem, or auto.
     c. For example if we have grid-template-columns: 100px auto 100px, the grid will have 3 columns with respective width.
 
-## 3. grid-template-rows ===>
+### 3. grid-template-rows ===>
 
      a. This property defines and set the height of the div.
     b. we can use the height in px,  em, rem, or auto.
