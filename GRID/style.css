@@ -1,7 +1,19 @@
 /* this is the general implementation of the basic grid */
 .container {
   display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: 50px 50px 200px;
+  /* grid-template-columns: 100px auto;
+  grid-template-rows: 50px 50px 200px; */
+  /* shorthand */
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
   grid-gap: 3px;
+}
+.container2 {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
