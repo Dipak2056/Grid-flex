@@ -1,0 +1,7 @@
+/* this is the general implementation of the basic grid */
+.container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 50px 50px 200px;
+  grid-gap: 3px;
+}
