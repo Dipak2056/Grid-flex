@@ -45,3 +45,7 @@ it refers to the grid line to start with, in 2 columns grid we have 3 grid line,
 ### grid-column-end ==>
 
 it refers to the ending line where the grid child should end.
+
+### grid-column
+
+it is the short hand to show g-c-s and g-c-e grid-column:1/3; means it started at grid line 1 and ended at grid line 3. and if you are not aware how many columns you have in the layout we can use -1 to define the g-c-e as the last grid line.
