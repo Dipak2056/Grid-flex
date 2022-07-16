@@ -76,3 +76,13 @@ grid-area: f;
 }
 
 to get the blank values, we can put dot . in those areas.
+
+## Autofit and min max
+
+we use these two properties to give the dynamic values to the grid,
+giving value auto-fit helps the children to stretch-out to satisfy other grid rules without leaving any gaps in the view-port.
+
+### implicit rows
+
+to give rules to newly created rows created as a result to satisfy the grid-column rules, we want to use the css property as grid-auto-row or grid-auto-column and define its height or width. so that it always preserve this property.
+and you can actually get rid of the previously written rule for the grid-template-rows as all the rows are going to get created implicitly
