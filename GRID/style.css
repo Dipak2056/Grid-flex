@@ -14,14 +14,28 @@
   grid-template-rows: 40px 200px 40px;
 }
 .header {
-  grid-column: 2/-1;
+  grid-column: 1/9;
 }
 .menu {
-  grid-row: 1/3;
+  grid-row: 1/-1;
+  grid-column: 9/-1;
 }
 .content {
-  grid-column: 2/-1;
+  grid-column: 1/9;
 }
 .footer {
-  grid-column: 1/ -1;
+  grid-column: 1/ 9;
+}
+/* challange;-1 make the menu appear all the way to the bottom or to appear in the right */
+/* i gave some space from the footer and given grid-row:1/-1 to take entire height*/
+/* to change its position to right we should make it start at 9th column */
+@media only screen and (max-width: 600px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .menu {
+    grid-column: 1/-1;
+  }
 }
