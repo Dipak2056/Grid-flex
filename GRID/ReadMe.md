@@ -49,3 +49,30 @@ it refers to the ending line where the grid child should end.
 ### grid-column
 
 it is the short hand to show g-c-s and g-c-e grid-column:1/3; means it started at grid line 1 and ended at grid line 3. and if you are not aware how many columns you have in the layout we can use -1 to define the g-c-e as the last grid line.
+👉🏻 grid-row also work in the same way
+
+## grid-template-areas:
+
+this is the shorthand for all the layouts,
+the values are the names which are to be passed to the children of that grid with the property grid-area,
+it should look like this:-
+grid-template-areas:
+"h h h h h h h h h h m m"
+"c c c c c c c c c c m m"
+"f f f f f f f f f f m m";
+childrens:-
+.header {
+grid-area: h;
+}
+.menu {
+grid-area: m;
+padding: 10px;
+}
+.content {
+grid-area: c;
+}
+.footer {
+grid-area: f;
+}
+
+to get the blank values, we can put dot . in those areas.

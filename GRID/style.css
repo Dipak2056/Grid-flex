@@ -6,36 +6,29 @@
   /* shorthand */
   grid-template: repeat(2, 50px) / repeat(3, 1fr);
   grid-gap: 3px;
+  display: none;
 }
 .container2 {
+  height: 100%;
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 200px 40px;
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    "h h h h h h h h h h h m"
+    "c c c c c c c c c c c m"
+    "f f f f f f f f f f f m";
 }
 .header {
-  grid-column: 1/9;
+  grid-area: h;
 }
 .menu {
-  grid-row: 1/-1;
-  grid-column: 9/-1;
+  grid-area: m;
+  padding: 10px;
 }
 .content {
-  grid-column: 1/9;
+  grid-area: c;
 }
 .footer {
-  grid-column: 1/ 9;
-}
-/* challange;-1 make the menu appear all the way to the bottom or to appear in the right */
-/* i gave some space from the footer and given grid-row:1/-1 to take entire height*/
-/* to change its position to right we should make it start at 9th column */
-@media only screen and (max-width: 600px) {
-  .container2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .menu {
-    grid-column: 1/-1;
-  }
+  grid-area: f;
 }
